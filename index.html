@@ -1,65 +1,118 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>R Mohan Digital</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
 padding:0;
-background:#f4f4f4;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
 }
 
 header{
 background:#0a1f44;
 color:white;
-padding:20px;
-text-align:center;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
 }
 
 .hero{
-background:#0d47a1;
+background:linear-gradient(135deg,#0a1f44,#1e4db7);
 color:white;
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
 }
 
 .btn{
-display:inline-block;
 background:#ff9800;
 color:white;
 padding:12px 25px;
+border-radius:6px;
 text-decoration:none;
-border-radius:5px;
-margin-top:15px;
+display:inline-block;
 }
 
-.services{
-padding:40px 20px;
+.section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
 text-align:center;
+margin-bottom:30px;
+color:#0a1f44;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
 .card{
 background:white;
-padding:20px;
-margin:10px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-display:inline-block;
-width:250px;
-}
-
-.contact{
-background:white;
-padding:40px 20px;
+width:280px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
 text-align:center;
 }
 
-footer{
+.price{
+color:#ff6600;
+font-size:24px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.contact{
 background:#0a1f44;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.contact a{
+color:#ffcc00;
+}
+
+footer{
+background:#08152f;
 color:white;
 text-align:center;
 padding:15px;
@@ -70,49 +123,114 @@ padding:15px;
 <body>
 
 <header>
-<h1>R Mohan Digital</h1>
-<p>Digital Marketing Services</p>
+<div class="logo">R Mohan Digital</div>
+<nav>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-<h2>Grow Your Business Online</h2>
-<p>SEO, Social Media Marketing, Google Ads and Website Development</p>
-<a class="btn" href="#">Get Free Quote</a>
+<h1>Grow Digitally With Us</h1>
+<p>Digital Marketing, Programming, Web Designing & Editing Courses</p>
+<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdjooPul6JRI3DgcD2sioCPNNjT5sVlX1Qyxm8YnnIbSQ8y1w/viewform?usp=publish-editor" target="_blank">Enroll Now</a>
 </section>
 
-<section class="services">
-<h2>Our Services</h2>
+<section class="section" id="about">
+<h2>About Us</h2>
+<p style="text-align:center;">
+We are a team of passionate Indians helping students and businesses grow through digital skills and marketing services.
+</p>
+
+<div class="cards" style="margin-top:30px;">
+<div class="card"><h3>R Mohan</h3><p>Founder & Digital Marketing Expert</p></div>
+<div class="card"><h3>Team Member 2</h3><p>SEO Specialist</p></div>
+<div class="card"><h3>Team Member 3</h3><p>Social Media Manager</p></div>
+<div class="card"><h3>Team Member 4</h3><p>Web Designer</p></div>
+<div class="card"><h3>Team Member 5</h3><p>Programming Trainer</p></div>
+<div class="card"><h3>Team Member 6</h3><p>Editing Specialist</p></div>
+</div>
+</section>
+
+<section class="section" id="courses">
+<h2>Our Courses</h2>
+
+<div class="cards">
 
 <div class="card">
+<h3>Programming</h3>
+<p>HTML, CSS, JavaScript & Python Basics</p>
+<div class="price">₹250</div>
+</div>
+
+<div class="card">
+<h3>Web Designing</h3>
+<p>Create modern and responsive websites</p>
+<div class="price">₹250</div>
+</div>
+
+<div class="card">
+<h3>Editing</h3>
+<p>Photo Editing, Video Editing & Thumbnails</p>
+<div class="price">₹250</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="services">
+<h2>Digital Marketing Services</h2>
+
+<div class="cards">
+<div class="card">
 <h3>SEO</h3>
-<p>Improve your Google ranking and get more visitors.</p>
+<p>Improve website rankings on Google</p>
 </div>
 
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p>Grow your audience on Instagram and Facebook.</p>
+<p>Grow Instagram, Facebook & YouTube presence</p>
 </div>
 
 <div class="card">
 <h3>Google Ads</h3>
-<p>Get targeted customers through paid advertising.</p>
+<p>Reach more customers online</p>
+</div>
 </div>
 
+<p style="text-align:center;margin-top:25px;">
+<span class="price">₹300 / 2 Weeks</span>
+</p>
 </section>
 
-<section class="contact">
-<h2>Contact Us</h2>
-<p>Email: rmohankiran74@gmail.com</p>
-<p>Phone: +91 9705211396</p>
+<section class="section">
+<h2>Why Choose Us?</h2>
+<div class="cards">
+<div class="card">🇮🇳 Indian Team</div>
+<div class="card">💡 Practical Learning</div>
+<div class="card">💰 Affordable Pricing</div>
+<div class="card">🚀 Career Growth</div>
+</div>
+</section>
 
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdjooPul6JRI3DgcD2sioCPNNjT5sVlX1Qyxm8YnnIbSQ8y1w/viewform?usp=publish-editor">
-Contact Form
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📍 Hyderabad, India</p>
+<p>Contact us using the registration form below.</p>
+
+<br>
+
+<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdjooPul6JRI3DgcD2sioCPNNjT5sVlX1Qyxm8YnnIbSQ8y1w/viewform?usp=publish-editor" target="_blank">
+Open Registration Form
 </a>
 </section>
 
 <footer>
-<p>© 2026 R Mohan Digital. All Rights Reserved.</p>
+© 2026 R Mohan Digital | All Rights Reserved
 </footer>
 
 </body>
 </html>
+
