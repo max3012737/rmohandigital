@@ -17,9 +17,52 @@
 <input type="password" id="password" placeholder="Password">
 <br><br>
 
-<button id="signupBtn">Create Account</button>
+<button onclick="signup()">Create Account</button>
 
 <p id="msg"></p>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+import {
+getAuth,
+createUserWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyCQhTcbf7u4Aw2hgIgm3jS1ucm8_21Hj8U",
+authDomain: "r-mohan-digital.firebaseapp.com",
+projectId: "r-mohan-digital",
+storageBucket: "r-mohan-digital.firebasestorage.app",
+messagingSenderId: "437837739461",
+appId: "1:437837739461:web:86ce4fcf767050296907ac"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+window.signup = function() {
+
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+
+createUserWithEmailAndPassword(auth,email,password)
+.then(() => {
+
+document.getElementById("msg").innerHTML =
+"Account Created Successfully";
+
+})
+.catch((error) => {
+
+document.getElementById("msg").innerHTML =
+error.message;
+
+});
+
+}
+
+</script>
 
 </body>
 </html>
