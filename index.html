@@ -19,13 +19,12 @@ background:#0b1020;
 color:white;
 }
 
-/* HEADER */
 header{
 position:fixed;
 top:0;
 width:100%;
 background:rgba(11,16,32,.95);
-padding:18px 50px;
+padding:18px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -41,7 +40,7 @@ color:#00d4ff;
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:15px;
 transition:.3s;
 }
 
@@ -49,34 +48,33 @@ nav a:hover{
 color:#00d4ff;
 }
 
-/* HERO */
 .hero{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#08111f,#0d1b35,#12284f);
 padding:20px;
+background:linear-gradient(135deg,#08111f,#0d1b35,#12284f);
 }
 
 .hero h1{
-font-size:65px;
+font-size:60px;
 background:linear-gradient(90deg,#00d4ff,#00ff9d);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
 
 .hero p{
-font-size:20px;
-color:#bfc7d5;
-margin:15px 0;
+font-size:22px;
+color:#d7dce5;
+margin:20px 0;
 }
 
 .btn{
 background:#00d4ff;
 color:#08111f;
-padding:12px 25px;
+padding:12px 24px;
 border-radius:30px;
 font-weight:bold;
 text-decoration:none;
@@ -88,21 +86,19 @@ transition:.3s;
 transform:translateY(-3px);
 }
 
-/* SECTIONS */
 section{
-padding:80px 20px;
+padding:90px 20px;
 max-width:1200px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-font-size:38px;
+font-size:40px;
 margin-bottom:30px;
 color:#00d4ff;
 }
 
-/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -111,7 +107,7 @@ gap:20px;
 
 .card{
 background:#111b31;
-padding:20px;
+padding:25px;
 border-radius:15px;
 border:1px solid rgba(255,255,255,.08);
 transition:.3s;
@@ -127,20 +123,18 @@ margin-bottom:10px;
 }
 
 .price{
-font-size:22px;
+font-size:24px;
 color:#00ff9d;
-margin-top:10px;
 font-weight:bold;
+margin-top:15px;
 }
 
-/* ABOUT */
 .about{
 text-align:center;
+line-height:1.8;
 color:#d7dce5;
-line-height:1.7;
 }
 
-/* COUNTERS */
 .stats{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -156,11 +150,10 @@ text-align:center;
 
 .counter{
 font-size:40px;
-color:#00ff9d;
 font-weight:bold;
+color:#00ff9d;
 }
 
-/* FAQ */
 .faq-item{
 background:#111b31;
 padding:20px;
@@ -168,19 +161,16 @@ border-radius:12px;
 margin-bottom:15px;
 }
 
-/* CONTACT */
 .contact{
 text-align:center;
 }
 
-/* FOOTER */
 footer{
 background:#050913;
 text-align:center;
-padding:20px;
+padding:25px;
 }
 
-/* WHATSAPP FLOAT */
 .floating-whatsapp{
 position:fixed;
 bottom:20px;
@@ -192,6 +182,7 @@ border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 box-shadow:0 0 15px rgba(37,211,102,.5);
+z-index:9999;
 }
 </style>
 </head>
@@ -203,35 +194,94 @@ box-shadow:0 0 15px rgba(37,211,102,.5);
 
 <nav>
 <a href="#about">About</a>
+<a href="#team">Team</a>
 <a href="#courses">Courses</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <div>
 <h1>R Mohan Digital</h1>
-<p>Learn Digital Marketing, Web Design, Programming & Editing</p>
+<p>
+Digital Marketing • Programming • Web Designing • Editing
+</p>
 
-<a class="btn" href="https://wa.me/919705211396" target="_blank">
-Contact on WhatsApp
+<p>
+All courses and training programs are supervised and managed by R Mohan.
+</p>
+
+<a class="btn"
+href="https://docs.google.com/forms/d/e/1FAIpQLSdjooPul6JRI3DgcD2sioCPNNjT5sVlX1Qyxm8YnnIbSQ8y1w/viewform?usp=header"
+target="_blank">
+Register Now
 </a>
 </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
 <h2>About Us</h2>
 
 <div class="about">
-We are a digital learning team based in Hyderabad helping students
-learn real-world skills like marketing, design, and programming.
+<p>
+R Mohan Digital is dedicated to helping students learn practical digital skills
+including Programming, Web Designing, Digital Marketing and Editing.
+</p>
+
+<br>
+
+<p>
+Founder & Course Director: <strong>R Mohan</strong>
+</p>
+
+<p>
+All courses, training programs, mentorship activities and student support are
+controlled and supervised by R Mohan.
+</p>
 </div>
 </section>
 
-<!-- COURSES -->
+<section id="team">
+<h2>Our Team</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Sravani</h3>
+<p>Team Leader 1</p>
+<p>Programming Course Trainer</p>
+</div>
+
+<div class="card">
+<h3>Jeswanth</h3>
+<p>Team Leader 2</p>
+<p>Programming Course Trainer</p>
+</div>
+
+<div class="card">
+<h3>Geethika</h3>
+<p>Mentor</p>
+</div>
+
+<div class="card">
+<h3>Jyoshna</h3>
+<p>Team Leader 3</p>
+</div>
+
+<div class="card">
+<h3>Harsha</h3>
+<p>Team Leader 4</p>
+</div>
+
+<div class="card">
+<h3>Yeswanth & Akash</h3>
+<p>Mediators & Editors</p>
+</div>
+
+</div>
+</section>
+
 <section id="courses">
 <h2>Courses</h2>
 
@@ -239,27 +289,30 @@ learn real-world skills like marketing, design, and programming.
 
 <div class="card">
 <h3>Programming</h3>
-<p>HTML, CSS, JavaScript, Python Basics</p>
+<p>HTML, CSS, JavaScript and Python Basics</p>
 <div class="price">₹250</div>
-<a class="btn" href="upi://pay?pa=9705211396@ibl&pn=R Mohan Digital&am=250&cu=INR">Pay Now</a>
+
+<a class="btn"
+href="upi://pay?pa=9705211396@ibl&pn=R Mohan Digital&am=250&cu=INR">
+Pay Now
+</a>
 </div>
 
 <div class="card">
 <h3>Web Designing</h3>
-<p>Responsive Website Design</p>
+<p>Responsive Websites & UI Design</p>
 <div class="price">₹250</div>
 </div>
 
 <div class="card">
 <h3>Editing</h3>
-<p>Photo & Video Editing Skills</p>
+<p>Photo Editing, Video Editing & Thumbnail Design</p>
 <div class="price">₹250</div>
 </div>
 
 </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
 <h2>Digital Marketing Services</h2>
 
@@ -267,33 +320,33 @@ learn real-world skills like marketing, design, and programming.
 
 <div class="card">
 <h3>SEO</h3>
-<p>Rank your website on Google.</p>
+<p>Increase website rankings on Google.</p>
 </div>
 
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p>Grow Instagram & Facebook pages.</p>
+<p>Grow your brand on social media platforms.</p>
 </div>
 
 <div class="card">
 <h3>Google Ads</h3>
-<p>Get more customers online.</p>
+<p>Reach more customers effectively.</p>
 </div>
 
 </div>
 
-<br>
-
-<div style="text-align:center;">
+<div style="text-align:center;margin-top:30px;">
 <div class="price">₹300 / 2 Weeks</div>
+
 <br>
-<a class="btn" href="upi://pay?pa=9705211396@ibl&pn=R Mohan Digital&am=300&cu=INR">
+
+<a class="btn"
+href="upi://pay?pa=9705211396@ibl&pn=R Mohan Digital&am=300&cu=INR">
 Pay Now
 </a>
 </div>
 </section>
 
-<!-- IMPACT -->
 <section>
 <h2>Our Impact</h2>
 
@@ -301,83 +354,109 @@ Pay Now
 
 <div class="stat">
 <div class="counter" data-target="100">0</div>
-<p>Students</p>
+<p>Students Trained</p>
 </div>
 
 <div class="stat">
 <div class="counter" data-target="50">0</div>
-<p>Projects</p>
+<p>Projects Completed</p>
 </div>
 
 <div class="stat">
 <div class="counter" data-target="6">0</div>
-<p>Team</p>
+<p>Core Team Members</p>
 </div>
 
 <div class="stat">
 <div class="counter" data-target="24">0</div>
-<p>Support</p>
+<p>Support Hours</p>
 </div>
 
 </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section>
 <h2>Student Reviews</h2>
 
 <div class="grid">
 
 <div class="card">
-<p>Very good training for beginners.</p>
-<h3>- Rahul</h3>
+<p>Excellent learning experience and practical training.</p>
+<h3>Student Review</h3>
 </div>
 
 <div class="card">
-<p>Easy and practical learning.</p>
-<h3>- Priya</h3>
+<p>Helpful mentors and easy-to-understand lessons.</p>
+<h3>Student Review</h3>
 </div>
 
 <div class="card">
-<p>Helped me build my first website.</p>
-<h3>- Kiran</h3>
+<p>Great support and guidance throughout the course.</p>
+<h3>Student Review</h3>
 </div>
 
 </div>
 </section>
 
-<!-- CONTACT + GOOGLE FORM -->
-<section id="contact" class="contact">
-<h2>Get Started</h2>
+<section>
+<h2>Frequently Asked Questions</h2>
 
-<p>Fill the form below to join our courses.</p>
+<div class="faq-item">
+<h3>Do I need previous experience?</h3>
+<p>No. Our courses are beginner friendly.</p>
+</div>
+
+<div class="faq-item">
+<h3>How do I register?</h3>
+<p>Fill out the registration form below.</p>
+</div>
+
+<div class="faq-item">
+<h3>Will I get support?</h3>
+<p>Yes. Guidance and support are provided throughout the course.</p>
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+<h2>Course Registration</h2>
+
+<p>
+Fill out the registration form below and our team will contact you.
+</p>
+
+<br><br>
 
 <iframe
 src="https://docs.google.com/forms/d/e/1FAIpQLSdjooPul6JRI3DgcD2sioCPNNjT5sVlX1Qyxm8YnnIbSQ8y1w/viewform?embedded=true"
 width="100%"
 height="700"
-frameborder="0">
-Loading…
+frameborder="0"
+marginheight="0"
+marginwidth="0">
+Loading...
 </iframe>
 
 <br><br>
 
-<a class="btn" href="https://wa.me/919705211396" target="_blank">
+<a class="btn"
+href="https://wa.me/919705211396"
+target="_blank">
 Chat on WhatsApp
 </a>
 </section>
 
-<!-- FOOTER -->
 <footer>
-© 2026 R Mohan Digital | Hyderabad
+© 2026 R Mohan Digital | Hyderabad, India
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a class="floating-whatsapp" href="https://wa.me/919705211396" target="_blank">
+<a
+class="floating-whatsapp"
+href="https://wa.me/919705211396"
+target="_blank">
 WhatsApp
 </a>
 
-<!-- COUNTER SCRIPT -->
 <script>
 const counters=document.querySelectorAll('.counter');
 
